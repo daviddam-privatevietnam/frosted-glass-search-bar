@@ -1,0 +1,122 @@
+/*********************************************
+ 1. Force Transparent Background On Page
+*********************************************/
+html, body {
+  background: none !important;
+}
+.page-section {
+  background: none !important;
+}
+
+/*********************************************
+ 2. Base Typography
+*********************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+/*********************************************
+ 3. Container For Our Search Bar
+*********************************************/
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: transparent !important;
+}
+
+/*********************************************
+ 4. Frosted Glass Search Box
+*********************************************/
+.search-box {
+  position: relative;
+  /* Partially transparent white */
+  background: rgba(255,255,255,0.7);
+  /* Frosted effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  /* Subtle black drop shadow + faint gold glow */
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.1),
+    0 0 8px rgba(212,175,55,0.2);
+  padding: 1.5rem 2rem;
+}
+
+.search-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/*********************************************
+ 5. Service Pills
+*********************************************/
+.nav-pills .nav-link {
+  border-radius: 30px !important;
+  color: #000 !important;
+  font-size: 0.95rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+.nav-pills .nav-link.active {
+  background-color: #D4AF37 !important; /* gold normal */
+  color: #000 !important;
+}
+.nav-pills .nav-link:hover {
+  background-color: #f9f5e6 !important;
+}
+
+/*********************************************
+ 6. Form Controls
+*********************************************/
+.form-select, .form-control {
+  background: rgba(255,255,255,0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+/*********************************************
+ 7. Gold Search Button
+*********************************************/
+.btn-gold {
+  background-color: #D4AF37 !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 30px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  transition: background-color 0.2s, transform 0.2s !important;
+}
+.btn-gold:hover {
+  background-color: #B38E29 !important;
+  transform: scale(1.03) !important;
+  color: #000 !important;
+}
+
+/*********************************************
+ 8. Responsive Adjustments
+*********************************************/
+@media (max-width: 767px) {
+  .nav-pills {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+  .nav-pills .nav-link {
+    margin-bottom: 0.5rem !important;
+  }
+}
